@@ -1,0 +1,216 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+body {
+    background: #e8e8e8;
+    color: #222;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background: #0b1c26;
+    height: 100vh;
+    padding: 40px 20px;
+    position: fixed;
+}
+
+.sidebar .logo {
+    color: #00aaff;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.sidebar ul li a:hover {
+    color: #00aaff;
+}
+
+/* Main Content */
+.main {
+    margin-left: 220px;
+    width: 100%;
+}
+
+/* Sections */
+section {
+    padding: 60px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #275c7a;
+}
+
+/* Home Section */
+.home {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #002b45, #005f8f);
+    color: #fff;
+}
+
+.name {
+    color: #00d5ff;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    background: #00d5ff;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #00a3cc;
+}
+
+/* Skills Section */
+.skill-box .skill {
+    margin: 20px 0;
+}
+
+.skill span {
+    font-weight: bold;
+}
+
+.bar {
+    background: #305b68;
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.level {
+    height: 10px;
+    background: #00aaff;
+    border-radius: 5px;
+}
+
+/* Skill Levels */
+/* General Styling (Simulating the dark background) */
+body {
+    background-color: #101020; /* Dark background color */
+    color: #ffffff; /* White text */
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Category Title Styling */
+.category-title {
+    color: #275c7a;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+
+/* Skill List Layout (Using Flexbox) */
+.skill-list {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0 auto;
+    display: flex; /* Arranges items horizontally */
+    justify-content: center; /* Centers the whole list */
+    max-width: 900px; /* Limits the width for better centering */
+}
+/* Individual Skill Item Styling */
+.skill-item {
+    /* Centers the text within the list item */
+    text-align: center;
+    
+    /* Padding for spacing the skill names */
+    padding: 15px 35px; 
+    
+    /* Vertical divider (similar to the image) */
+    border-right: 1px solid rgba(255, 255, 255, 0.2); 
+    
+    /* Style for the text */
+    font-size: 1.1em;
+}
+/* Remove the divider from the last item */
+.skill-item:last-child {
+    border-right: none;
+}
+/* Projects */
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.card {
+    padding: 20px;
+    background: #567f9f;
+    box-shadow: 0px 0px 10px #427198;
+    border-radius: 10px;
+}
+
+/* Contact */
+.contact form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+}
+
+button {
+    padding: 12px;
+    background: #1f648b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #0072a3;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .project-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .main {
+        margin-left: 0;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+}
